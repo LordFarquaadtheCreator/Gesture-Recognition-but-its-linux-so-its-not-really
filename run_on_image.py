@@ -8,6 +8,8 @@ WINDOW = "Hand Tracking"
 PALM_MODEL_PATH = "models/palm_detection_without_custom_op.tflite"
 LANDMARK_MODEL_PATH = "models/hand_landmark.tflite"
 ANCHORS_PATH = "models/anchors.csv"
+INPUT_IMAGE = "hand.png"
+OUTPUT_IMAGE = "out_hand.png"
 
 connections = src.extra.connections
 int_to_char = src.extra.classes
