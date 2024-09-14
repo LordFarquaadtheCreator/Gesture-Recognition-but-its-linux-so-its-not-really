@@ -22,7 +22,7 @@ detector = HandTrackerNMS(
     box_enlarge=1.3
 )
 
-gesture_clf = joblib.load(r'models\\gesture_clf.pkl')
+gesture_clf = joblib.load('models/gesture_clf.pkl')
 
 cv2.namedWindow(WINDOW)
 
@@ -30,7 +30,7 @@ word = []
 letter = ""
 staticGesture = 0
 
-image_orig = cv2.imread(r'input//my_Y.jpg')
+image_orig = cv2.imread('input/my_Y.jpg')
 image_orig = cv2.resize(image_orig, (400, 600))
 image = cv2.cvtColor(image_orig, cv2.COLOR_BGR2RGB)
 points, bboxes, joints = detector(image)
